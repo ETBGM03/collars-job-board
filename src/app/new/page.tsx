@@ -1,32 +1,18 @@
-"use client";
-
-import { useRouter } from "next/navigation";
-import { JobForm } from "@/components/JobForm";
-import { addJob } from "@/lib/storage";
-import type { Job } from "@/types/job";
+import Link from "next/link";
+import { JobForm } from "@/components/form/JobForm";
 import { ArrowLeft, HardHat } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function NewJobPage() {
-  const router = useRouter();
-
-  function handleSubmit(job: Job) {
-    addJob(job);
-    router.push("/");
-  }
-
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b border-border/60 bg-background/95 backdrop-blur sticky top-0 z-10">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 py-4 flex items-center gap-3">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => router.push("/")}
-            aria-label="Go back"
-          >
-            <ArrowLeft className="h-4 w-4" />
+          <Button variant="ghost" size="icon" asChild aria-label="Go back">
+            <Link href="/">
+              <ArrowLeft className="h-4 w-4" />
+            </Link>
           </Button>
           <div className="flex items-center gap-2.5">
             <div className="p-1.5 rounded-md bg-primary/10">
@@ -52,7 +38,7 @@ export default function NewJobPage() {
         </div>
 
         <div className="border border-border/60 rounded-xl p-6 bg-card">
-          <JobForm onSubmit={handleSubmit} />
+          <JobForm />
         </div>
       </main>
     </div>

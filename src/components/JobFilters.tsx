@@ -1,5 +1,7 @@
 "use client";
 
+import { Search } from "lucide-react";
+
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -9,28 +11,13 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import type { JobFilters, TradeCategory, JobType } from "@/types/job";
-import { Search } from "lucide-react";
+import {
+  JOB_TYPES as BASE_JOB_TYPES,
+  TRADES as BASE_TRADES,
+} from "@/constants/jobBoard.constants";
 
-const TRADES: (TradeCategory | "All")[] = [
-  "All",
-  "Electrician",
-  "Plumber",
-  "HVAC",
-  "Welder",
-  "Carpenter",
-  "Mason",
-  "Painter",
-  "Roofer",
-  "Pipefitter",
-  "General Labor",
-];
-
-const JOB_TYPES: (JobType | "All")[] = [
-  "All",
-  "Full-time",
-  "Part-time",
-  "Contract",
-];
+const TRADES: (TradeCategory | "All")[] = ["All", ...BASE_TRADES];
+const JOB_TYPES: (JobType | "All")[] = ["All", ...BASE_JOB_TYPES];
 
 interface Props {
   filters: JobFilters;

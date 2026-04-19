@@ -1,0 +1,86 @@
+[
+  {
+    "id": "87acbeb0-d44a-4e12-b3f5-d89199143ecf",
+    "title": "asdasdas",
+    "trade": "Plumber",
+    "location": "Colombia, Medellín",
+    "jobType": "Full-time",
+    "payMin": 40,
+    "payMax": 44,
+    "description": "asdasdasdasdasdasdasdas",
+    "status": "Active",
+    "createdAt": "2026-04-19T18:00:14.065Z"
+  },
+  {
+    "id": "d9b3c0e3-b623-416b-86aa-185b32dbf506",
+    "title": "Probando cambios",
+    "trade": "Roofer",
+    "location": "Santa Cruz de la Sierra",
+    "jobType": "Part-time",
+    "payMin": 55,
+    "payMax": 80,
+    "description": "Testing testing Testing testing Testing testing Testing testing",
+    "status": "Active",
+    "createdAt": "2026-04-19T17:13:31.894Z"
+  },
+  {
+    "id": "seed-1",
+    "title": "Master Electrician",
+    "trade": "Electrician",
+    "location": "Austin, TX",
+    "jobType": "Full-time",
+    "payMin": 35,
+    "payMax": 55,
+    "description": "Looking for a licensed master electrician for commercial and residential projects. Must have 5+ years experience with panel upgrades, conduit bending, and code compliance.",
+    "status": "Active",
+    "createdAt": "2026-04-18T00:00:00.000Z"
+  },
+  {
+    "id": "seed-2",
+    "title": "Commercial Plumber",
+    "trade": "Plumber",
+    "location": "Denver, CO",
+    "jobType": "Full-time",
+    "payMin": 30,
+    "payMax": 48,
+    "description": "Seeking an experienced commercial plumber for large-scale construction projects. Experience with medical gas systems and backflow prevention preferred.",
+    "status": "Active",
+    "createdAt": "2026-04-16T00:00:00.000Z"
+  },
+  {
+    "id": "seed-3",
+    "title": "HVAC Technician",
+    "trade": "HVAC",
+    "location": "Phoenix, AZ",
+    "jobType": "Contract",
+    "payMin": 28,
+    "payMax": 42,
+    "description": "Contract HVAC tech needed for seasonal maintenance and installation of commercial split systems. EPA 608 certification required.",
+    "status": "Active",
+    "createdAt": "2026-04-14T00:00:00.000Z"
+  },
+  {
+    "id": "seed-4",
+    "title": "Structural Welder",
+    "trade": "Welder",
+    "location": "Houston, TX",
+    "jobType": "Full-time",
+    "payMin": 32,
+    "payMax": 50,
+    "description": "Experienced structural welder for steel fabrication shop. Must be certified in MIG/TIG/Stick. Blueprint reading required.",
+    "status": "Draft",
+    "createdAt": "2026-04-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-5",
+    "title": "Finish Carpenter",
+    "trade": "Carpenter",
+    "location": "Nashville, TN",
+    "jobType": "Part-time",
+    "payMin": 25,
+    "payMax": 38,
+    "description": "Part-time finish carpenter for custom residential builds. Trim work, cabinetry installation, and hardwood flooring experience a plus.",
+    "status": "Active",
+    "createdAt": "2026-04-09T00:00:00.000Z"
+  }
+]
