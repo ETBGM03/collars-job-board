@@ -18,7 +18,7 @@ const jobTypeStyles: Record<Job["jobType"], string> = {
 
 export function JobCard({ job }: { job: Job }) {
   return (
-    <Card className="group hover:shadow-md w-full max-w-sm h-full flex flex-col transition-all duration-200 border border-border/60 hover:border-border">
+    <Card className="group hover:shadow-md w-full h-full flex flex-col transition-all duration-200 border border-border/60 hover:border-border">
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between gap-3">
           <div className="flex-1 min-w-0">

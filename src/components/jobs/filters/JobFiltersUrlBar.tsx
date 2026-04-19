@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState, useTransition } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { JobFiltersBar } from "@/components/jobs/filters/JobFilters";
 import { useDebounce } from "@/hooks/useDebounce";
+import { parseFiltersFromSearchParams } from "@/lib/jobFilters";
 import type { JobFilters } from "@/types/job";
 
 function toSearchParams(filters: JobFilters) {
@@ -15,15 +16,6 @@ function toSearchParams(filters: JobFilters) {
   return params;
 }
 
-function fromSearchParams(sp: URLSearchParams): JobFilters {
-  return {
-    search: sp.get("q") ?? "",
-    trade: (sp.get("trade") ?? "All") as JobFilters["trade"],
-    jobType: (sp.get("type") ?? "All") as JobFilters["jobType"],
-    sortOrder: (sp.get("sort") ?? "newest") as JobFilters["sortOrder"],
-  };
-}
-
 export function JobFiltersUrlBar({ total }: { total: number }) {
   const router = useRouter();
   const pathname = usePathname();
@@ -31,7 +23,7 @@ export function JobFiltersUrlBar({ total }: { total: number }) {
   const [, startTransition] = useTransition();
 
   const filters = useMemo(
-    () => fromSearchParams(new URLSearchParams(searchParams.toString())),
+    () => parseFiltersFromSearchParams(Object.fromEntries(searchParams.entries())),
     [searchParams],
   );
 
