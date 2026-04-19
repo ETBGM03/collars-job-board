@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/estebangomez/Desktop/learning/collars-webapp/src/app/actions)",
+      "Bash(mkdir -p /Users/estebangomez/Desktop/learning/collars-webapp/src/components/form)"
+    ]
+  }
+}
