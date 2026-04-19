@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState, useTransition } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { JobFiltersBar } from "@/components/JobFilters";
+import { JobFiltersBar } from "@/components/jobs/filters/JobFilters";
 import { useDebounce } from "@/hooks/useDebounce";
 import type { JobFilters } from "@/types/job";
 

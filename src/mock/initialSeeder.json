@@ -1,29 +1,5 @@
 [
   {
-    "id": "87acbeb0-d44a-4e12-b3f5-d89199143ecf",
-    "title": "asdasdas",
-    "trade": "Plumber",
-    "location": "Colombia, Medellín",
-    "jobType": "Full-time",
-    "payMin": 40,
-    "payMax": 44,
-    "description": "asdasdasdasdasdasdasdas",
-    "status": "Active",
-    "createdAt": "2026-04-19T18:00:14.065Z"
-  },
-  {
-    "id": "d9b3c0e3-b623-416b-86aa-185b32dbf506",
-    "title": "Probando cambios",
-    "trade": "Roofer",
-    "location": "Santa Cruz de la Sierra",
-    "jobType": "Part-time",
-    "payMin": 55,
-    "payMax": 80,
-    "description": "Testing testing Testing testing Testing testing Testing testing",
-    "status": "Active",
-    "createdAt": "2026-04-19T17:13:31.894Z"
-  },
-  {
     "id": "seed-1",
     "title": "Master Electrician",
     "trade": "Electrician",

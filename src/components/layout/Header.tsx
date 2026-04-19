@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { HardHat, Plus } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
