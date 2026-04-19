@@ -2,9 +2,21 @@
 
 A job board web app for skilled trades employers to post and manage job listings.
 
+## Screenshots
+
+| Job Board | New Job |
+|---|---|
+| ![Job Board](./public/screenshots/job_list.png) | ![New Job](./public/screenshots/new_job.png) |
+
+| Mobile — Board | Mobile — Form |
+|---|---|
+| ![Board responsive](./public/screenshots/job_list_responsive.png) | ![Form responsive](./public/screenshots/new_job_responsive.png) |
+
+![Tests](./public/screenshots/vitest_ui.png)
+
 ## Setup & Run
 
-**Requirements:** Node.js 18+, pnpm
+**Requirements:** Node.js v22.22.2, pnpm
 
 ```bash
 pnpm install
