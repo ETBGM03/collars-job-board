@@ -16,14 +16,42 @@ A job board web app for skilled trades employers to post and manage job listings
 
 ## Setup & Run
 
-**Requirements:** Node.js v22.22.2, pnpm
+**Requirements:** [nvm](https://github.com/nvm-sh/nvm), pnpm
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/ETBGM03/collars-job-board.git
+cd collars-job-board
+```
+
+**2. Install and use the correct Node version**
+
+```bash
+nvm install   # reads .nvmrc — installs v22.22.2 if not present
+nvm use       # switches to v22.22.2
+```
+
+**3. Install dependencies**
 
 ```bash
 pnpm install
+```
+
+**4. Start the development server**
+
+```bash
 pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+**5. Run the tests**
+
+```bash
+pnpm test        # run all tests once
+pnpm test:ui     # open Vitest UI in the browser
+```
 
 No environment variables or external services required — data is persisted to `src/mock/initialSeeder.json`.
 
